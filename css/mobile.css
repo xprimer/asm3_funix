@@ -1,0 +1,68 @@
+@media only screen and (max-width: 767px) {
+    /* Hero section */
+
+    #banner h1 {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    /* Navbar */
+
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        border-left: none;
+        border-right: none;
+    }
+
+    /* About */
+
+    #about .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Job info */
+
+    .job-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Certificate */
+
+    .cert-content {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .cert-item {
+        border-left: none !important;
+        padding-left: 0 !important;
+    }
+
+    /* Projects */
+
+    .project-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+
+    #footer {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* font-size: 18px; */
+        font-weight: 400;
+    }
+}

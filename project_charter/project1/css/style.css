@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins, sans-serif;
+}
+
+/* Layout settings */
+
+.page-content {
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: rgb(83, 83, 172);
+    /* padding: 20px 20px 0 20px; */
+    /* display: grid;
+    grid-template-columns: 2.3fr 0.7fr;
+    column-gap: 20px; */
+    padding: 20px;
+}
+
+ .content {
+    height: 100%;   
+    /* background-color: rgba(192, 215, 215); */
+ }
+
+ .content.right {
+    background-color: rgba(192, 215, 215);
+
+ }
+
+ .content.left {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+ }
+
+ .content.left-up,
+ .content.left-down {
+    /* display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    column-gap: 20px; */
+
+ }
+
+
+/* Section General Styling */
+
+section {
+    padding: 10px;
+    background-color: rgba(192, 215, 215);
+    max-height: inherit;
+    width: 100%;
+    height: 100%;
+    /* overflow: scroll; */
+}
+
+.section-title {
+    font-size: 20px;
+    line-height: 1.5;
+    border-bottom: 1px solid gray;
+    color: rgb(83, 83, 172);
+    margin-bottom: 20px;  
+    text-transform: capitalize;  
+    /* left: 0; */
+}
+
+.section-content {
+}
+
+/* Goals section */
+
+.goals-content {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.goals-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+}
+
+.goals-icon i {
+    font-size: 30px;
+}
+
+.goals-text {
+    margin-bottom: 10px;
+    flex: 5;
+}
+
+.goals-text p:first-child {
+    font-weight: bold;
+}
+
+/* Section Team */
+
+.team-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.team-icon {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.team-text {
+    flex: 5;
+}
+
+.team-text p:first-child {
+    font-weight: bold;
+}
+
+/* Scope Section */
+
+/* Primary section */
+
+.primary-content {
+    display: flex;
+    align-items: center;
+}
+
+.primary-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    flex: 1;
+}
+
+.primary-text {
+    flex: 5;
+}
+
+/* Timeline Section */
+
+.timeline-content {
+    display: flex;
+    align-items: center;
+}
+
+.timeline-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.timeline-icon p {
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(83, 83, 172);
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.timeline-text {
+    flex: 5;
+    border-bottom: 1px dotted gray;
+    padding-bottom: 10px;
+}
+
+.timeline-text p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+

@@ -1,0 +1,63 @@
+/* Do lúc đầu em không sử dụng bootstrap để chia layout và sử dụng Grid + Flex để chia layout nên khi gắn thêm class của bootstrap grid vào layout bị bể rất nhiều, =và phải style lại rất nhiều, cảm thấy quá rối nên em quyết định sẽ chỉ style lại ở các breakpoints và ko sử dụng bootstrap grid nữa. */
+
+
+@media only screen and (max-width: 1023px) {
+
+    h1 {
+        font-size: 20%;
+    }
+
+    section > .container {
+    }
+
+    /* Navbar */
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-img {
+        display: none;
+    }
+
+    .nav-items--right a:first-child {
+        border-left-width: 0px;
+    }
+
+    /* About */
+
+
+    /* job-info */
+
+    .job-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 40px;
+    }
+
+    /* Certidicate */
+
+    .cert-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cert-item-img img{
+        width: 300px;
+        height: auto;
+    }
+
+    /* Project */
+
+    .project-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+}

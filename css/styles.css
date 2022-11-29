@@ -1,0 +1,511 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+#nav-bar {
+    text-align: center;
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+section#nav-bar,
+section#footer {
+    padding-bottom: 0px !important;
+}
+
+h1.section-title {
+    padding-top: 20px;
+}
+
+body {
+    position: relative;
+}
+
+/* Charter Button */
+
+.charter-nav {
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #b3d2f67e;
+    color: #0064d6;
+    cursor: pointer;
+}
+
+.charter-nav::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #b3d2f67e;
+    animation: glowing 3s ease-in infinite;
+}
+
+/* Learning animation */
+
+@keyframes glowing {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(1);
+        opacity: .75;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: .5;
+    }
+    75% {
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: .2;
+    }
+
+}
+
+/* Hero section */
+
+#banner {
+    background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+        ),
+        url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner h1 {
+    /* position: absolute; */
+    color: #fff;
+}
+
+#banner span {
+    /* position: absolute; */
+    color: #fff;
+}
+
+/* Navbar */
+
+/* #nav-bar {
+} */
+
+/* Nang cao - styling avatar on navbar */
+
+#nav-bar a:link,
+#nav-bar a:visited {
+    color: #5e5e5e;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+#nav-bar a i {
+    color: #0064d6;
+}
+
+#nav-bar a:hover {
+    color: #0064d6;
+}
+
+.nav-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    border-left: 1px solid #d4d3d3;
+    border-right: 1px solid #d4d3d3;
+    position: relative;
+}
+
+/* About section */
+
+#about .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about h1 {
+    margin-bottom: 30px;
+}
+
+#about #target {
+    flex: 1;
+    padding: 0 20px;
+}
+
+#about #personal-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+
+#about #personal-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about #personal-info ul li span {
+    font-weight: bold;
+}
+
+/* Info */
+
+.info-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 20px;
+    color: #0064d6;
+    cursor: pointer;
+}
+
+/* Job info */
+
+.job-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 25px;
+}
+
+/* job-cards styling */
+
+.job-card {
+    border: 1px solid darkgray;
+    padding: 20px;
+    height: 100%;
+}
+
+.job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.job-card-title {
+    flex: 7.5;
+    /* Set width to 75% as template */
+}
+
+.job-card-icon {
+    font-size: 34px;
+    flex: 2.5;
+    /* Set width to 25% as template */
+    /* Center the icon :D */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-card-icon i {
+    margin: 0 auto;
+}
+
+.job-card-text {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.job-card-contents {
+    margin-bottom: 20px;
+}
+
+/* Header with bullet styling */
+
+.bheader-header {
+    display: flex;
+    align-items: center;
+}
+
+.bheader-header .bullet {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #0064d6;
+}
+
+.bheader-header .header {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.bheader-date {
+    margin-left: 20px;
+    font-size: 13px;
+    font-style: italic;
+}
+.bheader-date--to.badge-date {
+    background-color: #0064d6;
+    padding: 0px 10px !important;
+    color: #fff;
+    border-radius: 4px !important;
+}
+
+/* job-card content RATING */
+
+.rating-title {
+    font-weight: bold;
+}
+
+.rating-rates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-bars {
+    width: 35px;
+    height: 3px;
+    flex: 1;
+    margin: 20px 5px 20px 0;
+    background-color: #d4d3d3;
+}
+
+.rating-bars.rated {
+    background-color: #0064d6;
+}
+
+/* Favorites */
+
+.favorites-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Force icon and text to center using flex */
+.favorites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.favorites {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.favorites-icon {
+    height: 50px;
+    width: 50px;
+    color: #0064d6;
+    border: 2px solid #0064d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 8px; */
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.favorites-title {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/* Certificate */
+
+.cert-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* row-gap: 30px;
+    column-gap: 15px; */
+    margin-top: 30px;
+}
+
+.cert-item {
+    display: flex;
+    gap: 20px;
+}
+
+.cert-item:nth-child(even) {
+    border-left: 1px solid #d6c08d;
+    padding-left: 20px;
+}
+
+.cert-item:nth-child(1),
+.cert-item:nth-child(2) {
+    border-bottom: 1px solid #d6c08d;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.cert-itemm-divider {
+    height: 2px;
+    width: 100%;
+    background-color: #d6c08d;
+}
+
+.cert-item-img img {
+    height: 100px;
+    width: auto;
+}
+
+.cert-item-title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.cert-item-text {
+    font-size: 13px;
+}
+
+/* Project */
+
+.project-content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #d4d3d3;
+    height: 100%;
+}
+
+.project-card-img img {
+    height: auto;
+    width: 100%;
+}
+
+.project-card-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    /* margin: 20px 0; */
+    border-bottom: 1px solid #d4d3d3;
+}
+
+.project-link:link,
+.project-link:visited {
+    color: black;
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+}
+
+.project-card-header:hover .project-link {
+    color: #0064d6;
+}
+
+.project-link:hover {
+    color: #0064d6;
+    
+}
+
+.project-card-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #d4d3d3;
+    font-size: 13px;
+}
+
+.project-card-desc__year.badge-date {
+    color: #fff;
+    padding: 8px;
+    background-color: #0064d6;
+    border-radius: 15px;
+}
+
+
+.project-card-content {
+    display: flex;
+    font-size: 13px;
+    border-bottom: 1px solid #d4d3d3;
+    padding: 10px;
+    align-items: center;
+}
+
+.project-card-content:last-child {
+    border-bottom: none;
+}
+
+.project-card-content__title {
+    flex: 2.5;
+    font-weight: bold;
+}
+
+.project-card-content__text {
+    flex: 7.5;
+}
+
+/* Footer */
+
+
+#footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer ul li {
+    /* display: inline-block; */
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#footer ul li i {
+    font-size: 24px;
+    color: #0064d6;
+}
